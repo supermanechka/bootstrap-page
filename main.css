@@ -1,0 +1,17 @@
+main {
+  width: calc(100% - 300px);
+  font-size: 15px;
+  padding-left: 35px;
+}
+
+main section {
+  width: 65%;
+}
+
+main h1 {
+  margin-top: 25px;
+}
+
+main h3 {
+  margin: 35px 0 15px 0;
+}
