@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap page</title>
+  <link href="./styles.css" rel="stylesheet">
+  <link href="./main.css" rel="stylesheet">
+  <link href="./aside.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <aside>
+    <div class="components">Компоненты</div>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href=" accordion.html">Accordion</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="alerts.html">Alerts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="badges.html">Badges</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="breadcrumb.html">Breadcrumb</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="buttons.html">Buttons</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="button-group.html">Button group</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cards.html">Cards</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="carousel.html">Carousel</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="close-button.html">Close button</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="collapse.html">Collapse</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="dropdowns.html">Dropdowns</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="list-group.html">List group</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="modal.html">Modal</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="navs-and-tabs.html">Navs and tabs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="navbar.html">Navbar</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pagination.html">Pagination</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="popovers.html">Popovers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="progress.html">Progress</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="scrollsp.html">Scrollspy</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="spinners.html">Spinners</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href=toasts.html">Toasts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tooltips.html">Tooltips</a>
+      </li>
+    </ul>
+  </aside>
+
+  <main>
+    <h1>Buttons</h1>
+    <section>
+      <h3>Button tags</h3>
+      <a class="btn btn-primary" href="#" role="button">Link</a>
+      <button class="btn btn-primary" type="submit">Button</button>
+      <input class="btn btn-primary" type="button" value="Input">
+      <input class="btn btn-primary" type="submit" value="Submit">
+      <input class="btn btn-primary" type="reset" value="Reset">
+    </section>
+
+    <section>
+      <h3>Outline buttons</h3>
+      <button type="button" class="btn btn-outline-primary">Primary</button>
+      <button type="button" class="btn btn-outline-secondary">Secondary</button>
+      <button type="button" class="btn btn-outline-success">Success</button>
+      <button type="button" class="btn btn-outline-danger">Danger</button>
+      <button type="button" class="btn btn-outline-warning">Warning</button>
+      <button type="button" class="btn btn-outline-info">Info</button>
+      <button type="button" class="btn btn-outline-light">Light</button>
+      <button type="button" class="btn btn-outline-dark">Dark</button>
+    </section>
+
+    <section>
+      <h3>Disabled state</h3>
+      <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button>
+      <button type="button" class="btn btn-secondary btn-lg" disabled>Button</button>
+
+      <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Primary
+        link</a>
+      <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
+    </section>
+
+    <section>
+      <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Toggle button</button>
+      <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off"
+        aria-pressed="true">Active toggle button</button>
+      <button type="button" class="btn btn-primary" disabled data-bs-toggle="button" autocomplete="off">Disabled toggle
+        button</button>
+    </section>
+  </main>
+
+</body>
+
+</html>
