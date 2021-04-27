@@ -87,6 +87,66 @@
       </li>
     </ul>
   </aside>
+
+  <main>
+    <h1>Навигация и вкладки</h1>
+
+    <section>
+      <h3>Пример с активными и неактивными ссылками</h3>
+      <nav class="nav justify-content-center">
+        <a class="nav-link" href="#">Ссылка</a>
+        <a class="nav-link" href="#">Ссылка</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Неактивная ссылка</a>
+      </nav>
+    </section>
+
+    <section>
+      <h3>Вертикальная навигация</h3>
+      <nav class="nav flex-column">
+        <a class="nav-link" href="#">Ссылка</a>
+        <a class="nav-link" href="#">Ссылка</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Неактивная ссылка</a>
+      </nav>
+    </section>
+
+    <section>
+      <h3>Навигация Tabs</h3>
+      <nav class="nav nav-tabs">
+        <a class="nav-link" href="#">Ссылка</a>
+        <a class="nav-link" href="#">Ссылка</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Неактивная ссылка</a>
+      </nav>
+    </section>
+
+    <section>
+      <h3>Навигация Pills</h3>
+      <nav class="nav nav-pills nav-fill">
+        <a class="nav-link active" aria-current="page" href="#">Ссылка</a>
+        <a class="nav-link" href="#">Ссылка</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Неактивная ссылка</a>
+      </nav>
+    </section>
+
+    <section>
+      <h3>Вкладки с выпадающими элементами</h3>
+      <nav class="nav nav-pills nav-fill">
+        <a class="nav-link active" aria-current="page" href="#">Ссылка</a>
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+          aria-expanded="false">Выпадающий эелемент</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Неактивная ссылка</a>
+      </nav>
+    </section>
+  </main>
 </body>
 
 </html>

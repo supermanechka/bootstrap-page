@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap page</title>
+  <link href="./styles.css" rel="stylesheet">
+  <link href="./main.css" rel="stylesheet">
+  <link href="./aside.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <aside>
+    <div class="components">Компоненты</div>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="accordion.html">Аккордеон</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="alerts.html">Уведомления</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="badge.html">Значки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="breadcrumb.html">Хлебные крошки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="buttons.html">Кнопки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="button-group.html">Группа кнопок</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cards.html">Карточки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="carousel.html">Карусель</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="close-button.html">Кнопка закрытия</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="collapse.html">Сворачиваемый контент</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="dropdowns.html">Выпадающие элементы</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="list-group.html">Группа списков</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="modal.html">Модальное окно</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="navs-and-tabs.html">Навигация и вкладки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="navbar.html">Навигационная панель</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pagination.html">Нумерация страниц</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="popovers.html">Информеры</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="progress.html">Прогрессбар</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="scrollsp.html">Отслеживание прокрутки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="spinners.html">Спиннеры</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href=toasts.html">Всплывающие сообщения</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tooltips.html">Подсказки</a>
+      </li>
+    </ul>
+  </aside>
+
+  <main>
+    <h1>Группа списков</h1>
+    <section>
+      <h3>Базовый пример с активным элементом</h3>
+      <ul class="list-group">
+        <li class="list-group-item">Первый элемент</li>
+        <li class="list-group-item active" aria-current="true">Второй элемент</li>
+        <li class=" list-group-item">Третий элемент</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Пример с ссылками и кнопками</h3>
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">Активная ссылка</a>
+        <a href="#" class="list-group-item list-group-item-action">Вторая ссылка</a>
+        <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-current="true">Неактивная
+          ссылка</a>
+      </div>
+    </section>
+
+    <section>
+      <h3>Контекстуальные классы c активными и неактивными элементами</h3>
+      <ul class="list-group">
+        <li class="list-group-item">Исходный элемент</li>
+
+        <li class="list-group-item list-group-item-action list-group-item-primary">Синий элемент</li>
+        <li class="list-group-item list-group-item-action list-group-item-secondary">Серый элемент</li>
+        <li class="list-group-item list-group-item-action list-group-item-success">Зеленый элемент</li>
+        <li class="list-group-item list-group-item-action list-group-item-danger">Красный элемент</li>
+        <li class="list-group-item list-group-item-action list-group-item-warning">Желтый элемент</li>
+        <li class="list-group-item list-group-item-action list-group-item-info">Голубой элемент</li>
+        <li class="list-group-item list-group-item-action list-group-item-light">Белый элемент</li>
+        <li class="list-group-item list-group-item-action list-group-item-dark">Темный элемент</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Пример со значками</h3>
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Первый элемент
+          <span class="badge bg-danger rounded-pill">14</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Второй элемент
+          <span class="badge bg-warning rounded-pill">2</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Третий элемент
+          <span class="badge bg-secondary rounded-pill">1</span>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Чекбоксы и радиокнопки</h3>
+      <div class="list-group">
+        <label class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="">
+          Первый чекбокс
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="">
+          Второй чекбокс
+        </label>
+        <label class="list-group-item">
+          <input class="form-check-input me-1" type="checkbox" value="">
+          Третий чекббокс
+        </label>
+    </section>
+
+    <section>
+      <h3>Пронумерованный</h3>
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Подзаголовок</div>
+            Текст
+          </div>
+          <span class="badge bg-primary rounded-pill">14</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold">Подзаголовок</div>
+            Cras justo odio
+          </div>
+          <span class="badge bg-primary rounded-pill">5</span>
+        </li>
+      </ol>
+    </section>
+  </main>
+</body>
+
+</html>
