@@ -50,7 +50,7 @@
         <a class="nav-link" href="collapse.html">Сворачиваемый контент</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="dropdowns.html">Выпадающие элементы</a>
+        <a class="nav-link active" href="dropdowns.html">Выпадающие элементы</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="list-group.html">Группа списков</a>
@@ -74,13 +74,13 @@
         <a class="nav-link" href="progress.html">Прогрессбар</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="scrollsp.html">Отслеживание прокрутки</a>
+        <a class="nav-link" href="scrollspy.html">Отслеживание прокрутки</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="spinners.html">Спиннеры</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href=toasts.html">Всплывающие сообщения</a>
+        <a class="nav-link" href="toasts.html">Всплывающие сообщения</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="tooltips.html">Подсказки</a>
@@ -92,7 +92,7 @@
 <main>
   <h3>Выпадающие элементы</h3>
   <section>
-    <h5>Пример</h5>
+    <h5>Стандартные выпадающие элементы</h5>
     <div class="btn-group">
       <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
         Профиль
@@ -142,7 +142,7 @@
   </section>
 
   <section>
-    <h5>Маленький и большой выпадающий элемент</h5>
+    <h5>Размеры выпадающих элементов</h5>
     <div class="btn-group">
       <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
         aria-expanded="false">
@@ -153,9 +153,20 @@
         <li><a class="dropdown-item" href="#">Картинки</a></li>
         <li><a class="dropdown-item" href="#">Музыка</a></li>
         <li>
-
       </ul>
     </div>
+    <div class="btn-group">
+      <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Средняя кнопка
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Сообщения</a></li>
+        <li><a class="dropdown-item" href="#">Картинки</a></li>
+        <li><a class="dropdown-item" href="#">Музыка</a></li>
+        <li>
+      </ul>
+    </div>
+
     <div class="btn-group">
       <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
         aria-expanded="false">
@@ -171,7 +182,7 @@
   </section>
 
   <section>
-    <h5>Выпадающие элементы вверх</h5>
+    <h5>Выпадающие элементы в разные стороны</h5>
     <div class="btn-group dropup">
       <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
         Профиль
@@ -183,12 +194,9 @@
         <li>
       </ul>
     </div>
-  </section>
 
-  <section>
-    <h5>Выпадающие элементы вправо и влево</h5>
     <div class="btn-group dropend">
-      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
         Профиль
       </button>
       <ul class="dropdown-menu">

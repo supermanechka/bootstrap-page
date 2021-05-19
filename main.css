@@ -6,9 +6,7 @@ main {
 
 main section {
   width: 70%;
-  border: 1px solid #efefef;
-  border-radius: 30px;
-  padding: 20px;
+  padding: 20px 0 0 20px;
   margin-top: 30px;
 }
 
@@ -27,4 +25,16 @@ main .badge {
 
 main .progress {
   margin-bottom: 20px;
+}
+
+main button {
+  margin: 10px;
+}
+
+main .spinner-border {
+  margin: 20px;
+}
+
+main .spinner-grow {
+  margin: 20px;
 }
