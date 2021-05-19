@@ -77,7 +77,7 @@
         <a class="nav-link" href="scrollspy.html">Отслеживание прокрутки</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="spinners.html">Спиннеры</a>
+        <a class="nav-link active" href="spinners.html">Спиннеры</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="toasts.html">Всплывающие сообщения</a>
@@ -87,6 +87,50 @@
       </li>
     </ul>
   </aside>
+
+  <main>
+    <h3>Спиннеры</h3>
+    <section>
+      <h5>Спиннер с границей</h5>
+      <div class="d-flex">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-border text-danger" role="status">
+          <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-border text-dark" role="status">
+          <span class="visually-hidden">Загрузка...</span>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <strong>Загрузка...</strong>
+        <div class="spinner-border m-5" role="status" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section>
+      <h5>Увеличивающийся спиннер</h5>
+      <div class="d-flex justify-content m-5">
+        <div class="spinner-grow" role="status">
+          <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+          <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+          <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+          <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+          <span class="visually-hidden">Загрузка...</span>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap page</title>
+  <link href="./styles.css" rel="stylesheet">
+  <link href="./main.css" rel="stylesheet">
+  <link href="./aside.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <aside>
+    <div class="components">Компоненты</div>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="accordion.html">Аккордеон</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="alerts.html">Уведомления</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="badge.html">Значки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="breadcrumb.html">Хлебные крошки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="buttons.html">Кнопки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="button-group.html">Группа кнопок</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cards.html">Карточки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="carousel.html">Карусель</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="close-button.html">Кнопка закрытия</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="collapse.html">Сворачиваемый контент</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="dropdowns.html">Выпадающие элементы</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="list-group.html">Группа списков</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="modal.html">Модальное окно</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="navs-and-tabs.html">Навигация и вкладки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="navbar.html">Навигационная панель</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pagination.html">Нумерация страниц</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="popovers.html">Информеры</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="progress.html">Прогрессбар</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="scrollspy.html">Отслеживание прокрутки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="spinners.html">Спиннеры</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="toasts.html">Всплывающие сообщения</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tooltips.html">Подсказки</a>
+      </li>
+    </ul>
+  </aside>
+</body>
+
+<main>
+  <h3>Выпадающие элементы</h3>
+  <section>
+    <h5>Стандартные выпадающие элементы</h5>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Профиль
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Сообщения</a></li>
+        <li><a class="dropdown-item" href="#">Картинки</a></li>
+        <li><a class="dropdown-item" href="#">Музыка</a></li>
+        <li>
+          <hr class="dropdown-divider">
+        </li>
+        <li><a class="dropdown-item" href="#">Выйти</a></li>
+      </ul>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-light">Профиль</button>
+        <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Сообщения</a></li>
+          <li><a class="dropdown-item" href="#">Картинки</a></li>
+          <li><a class="dropdown-item" href="#">Музыка</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Выйти</a></li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          Профиль
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item active" href="#">Сообщения</a></li>
+          <li><a class="dropdown-item" href="#">Картинки</a></li>
+          <li><a class="dropdown-item" href="#">Музыка</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Выйти</a></li>
+        </ul>
+      </div>
+  </section>
+
+  <section>
+    <h5>Размеры выпадающих элементов</h5>
+    <div class="btn-group">
+      <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Большая кнопка
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Сообщения</a></li>
+        <li><a class="dropdown-item" href="#">Картинки</a></li>
+        <li><a class="dropdown-item" href="#">Музыка</a></li>
+        <li>
+      </ul>
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Средняя кнопка
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Сообщения</a></li>
+        <li><a class="dropdown-item" href="#">Картинки</a></li>
+        <li><a class="dropdown-item" href="#">Музыка</a></li>
+        <li>
+      </ul>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Маленькая кнопка
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Сообщения</a></li>
+        <li><a class="dropdown-item" href="#">Картинки</a></li>
+        <li><a class="dropdown-item" href="#">Музыка</a></li>
+        <li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h5>Выпадающие элементы в разные стороны</h5>
+    <div class="btn-group dropup">
+      <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Профиль
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Сообщения</a></li>
+        <li><a class="dropdown-item" href="#">Картинки</a></li>
+        <li><a class="dropdown-item" href="#">Музыка</a></li>
+        <li>
+      </ul>
+    </div>
+
+    <div class="btn-group dropend">
+      <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Профиль
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Сообщения</a></li>
+        <li><a class="dropdown-item" href="#">Картинки</a></li>
+        <li><a class="dropdown-item" href="#">Музыка</a></li>
+        <li>
+      </ul>
+    </div>
+
+    <div class="btn-group">
+      <div class="btn-group dropstart" role="group">
+        <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropstart</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Сообщения</a></li>
+          <li><a class="dropdown-item" href="#">Картинки</a></li>
+          <li><a class="dropdown-item" href="#">Музыка</a></li>
+          <li>
+        </ul>
+      </div>
+      <button type="button" class="btn btn-danger">
+        Профиль
+      </button>
+    </div>
+  </section>
+</main>
+
+</html>

@@ -47,7 +47,7 @@
         <a class="nav-link" href="close-button.html">Кнопка закрытия</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="collapse.html">Сворачиваемый контент</a>
+        <a class="nav-link active" href="collapse.html">Сворачиваемый контент</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="dropdowns.html">Выпадающие элементы</a>
@@ -87,6 +87,54 @@
       </li>
     </ul>
   </aside>
+  <main>
+    <h3>Сворачиваемый контент</h3>
+    <section>
+      <h5>Стандартный сворачиваемый контент</h5>
+      <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
+          Ссылка
+        </a>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Некоторый заполнитель для компонента сворачивания. Эта панель по умолчанию скрыта, но открывается, когда
+          пользователь активирует соответствующий триггер.</div>
+      </div>
+    </section>
+
+    <section>
+      <h5>Взаимодействие со множественными объектами</h5>
+      <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+          aria-expanded="false" aria-controls="multiCollapseExample1">Переключить первый элемент</a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"
+          aria-expanded="false" aria-controls="multiCollapseExample2">Переключить второй элемент</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+          aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Переключить оба
+          элемента</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              Некоторый заполнитель для первого компонента сворачивания в этом примере множественного сворачивания. Эта
+              панель по умолчанию скрыта, но открывается, когда пользователь активирует соответствующий триггер.
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              Некоторое содержимое заполнителя для второго компонента сворачивания в этом примере множественного
+              сворачивания. Эта панель по умолчанию скрыта, но открывается, когда пользователь активирует
+              соответствующий триггер.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>

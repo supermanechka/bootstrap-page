@@ -32,7 +32,7 @@
         <a class="nav-link" href="breadcrumb.html">Хлебные крошки</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="buttons.html">Кнопки</a>
+        <a class="nav-link active" href="buttons.html">Кнопки</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="button-group.html">Группа кнопок</a>
@@ -87,6 +87,44 @@
       </li>
     </ul>
   </aside>
+
+  <main>
+    <h3>Кнопки</h3>
+    <section>
+      <h5>Стандартные кнопки</h5>
+      <a class="btn btn-light" href="#" role="button">Ссылка</a>
+      <button class="btn btn-primary" type="submit">Нажми</button>
+      <input class="btn btn-success" type="submit" value="Подтвердить">
+      <input class="btn btn-danger" type="reset" value="Удалить">
+      <button type="button" class="btn btn-outline-primary">Новинка</button>
+    </section>
+
+    <section>
+      <h5> Размеры кнопок</h5>
+      <button type="button" class="btn btn-primary btn-lg">Большая кнопка</button>
+      <button class="btn btn-success" type="submit">Средняя кнопка</button>
+      <button type="button" class="btn btn-secondary btn-sm">Маленькая кнопка</button>
+    </section>
+
+    <section>
+      <h5>Активные и неактивные кнопки и ссылки</h5>
+      <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off"
+        aria-pressed="true">Активная кнопка</button>
+      <button type="button" class="btn btn-primary" disabled data-bs-toggle="button" autocomplete="off">Неактивная
+        сслыка</button>
+    </section>
+
+    <section>
+      <h5>Блочные кнопки</h5>
+      <div class="d-grid gap-1">
+        <button class="btn btn-primary" type="button">Сохранить</button>
+      </div>
+      <div class="d-grid gap-1 col-6 mx-auto">
+        <button class="btn btn-danger" type="button">Удалить</button>
+      </div>
+    </section>
+
+  </main>
 </body>
 
 </html>

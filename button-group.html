@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap page</title>
+  <link href="./styles.css" rel="stylesheet">
+  <link href="./main.css" rel="stylesheet">
+  <link href="./aside.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <aside>
+    <div class="components">Компоненты</div>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="accordion.html">Аккордеон</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="alerts.html">Уведомления</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="badge.html">Значки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="breadcrumb.html">Хлебные крошки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="buttons.html">Кнопки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="button-group.html">Группа кнопок</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cards.html">Карточки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="carousel.html">Карусель</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="close-button.html">Кнопка закрытия</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="collapse.html">Сворачиваемый контент</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="dropdowns.html">Выпадающие элементы</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="list-group.html">Группа списков</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="modal.html">Модальное окно</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="navs-and-tabs.html">Навигация и вкладки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="navbar.html">Навигационная панель</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pagination.html">Нумерация страниц</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="popovers.html">Информеры</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="progress.html">Прогрессбар</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="scrollspy.html">Отслеживание прокрутки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="spinners.html">Спиннеры</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="toasts.html">Всплывающие сообщения</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tooltips.html">Подсказки</a>
+      </li>
+    </ul>
+  </aside>
+  <main>
+    <h3>Группа кнопок</h3>
+
+    <section>
+      <h5>Стандартная группа кнопок</h5>
+      <div class="btn-group">
+        <a href="#" class="btn btn-primary active" aria-current="page">Активная ссылка</a>
+        <a href="#" class="btn btn-danger disabled">Неактивная ссылка</a>
+        <a href="#" class="btn btn-outline-dark">Ссылка</a>
+      </div>
+    </section>
+
+    <section>
+      <h5>Группа чекбоксов</h5>
+      <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btncheck1">Чекбокс 1</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+        <label class="btn btn-outline-secondary" for="btncheck2">Чекбокс 2</label>
+
+        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+        <label class="btn btn-outline-warning" for="btncheck3">Чекбокс 3</label>
+      </div>
+    </section>
+    <section>
+      <h5>Кнопки «тулбаров»</h5>
+      <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group me-2" role="group" aria-label="First group">
+          <button type="button" class="btn btn-outline-secondary">1</button>
+          <button type="button" class="btn btn-outline-secondary">2</button>
+          <button type="button" class="btn btn-outline-secondary">3</button>
+          <button type="button" class="btn btn-outline-secondary">4</button>
+        </div>
+        <div class="input-group">
+          <div class="input-group-text" id="btnGroupAddon">@</div>
+          <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example"
+            aria-describedby="btnGroupAddon">
+        </div>
+      </div>
+    </section>
+    <section>
+      <h5>Размеры кнопок</h5>
+      <div class="btn-group btn-group-lg" role="group" aria-label="Big buttons">
+        <button type="button" class="btn btn-secondary">Левая</button>
+        <button type="button" class="btn btn-secondary">Середина</button>
+        <button type="button" class="btn btn-secondary">Правая</button>
+      </div>
+      </div>
+      <div class="btn-group" role="group" aria-label="Middle button">
+        <button type="button" class="btn btn-warning">Левая</button>
+        <button type="button" class="btn btn-warning">Середина</button>
+        <button type="button" class="btn btn-warning">Правая</button>
+      </div>
+      <div class="btn-group btn-group-sm" role="group" aria-label="Small button">
+        <button type="button" class="btn btn-outline-dark">Левая</button>
+        <button type="button" class="btn btn-outline-dark">Середина</button>
+        <button type="button" class="btn btn-outline-dark">Правая</button>
+      </div>
+    </section>
+    <section>
+      <h5>Группа кнопок и вложенность</h5>
+      <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+        <button type="button" class="btn btn-success">Подтвердить</button>
+        <button type="button" class="btn btn-danger">Удалить</button>
+
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h5>Вертикальные кнопки</h5>
+      <div class="btn-group-vertical">
+        <button type="button" class="btn btn-success">Подтвердить</button>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Dropdown
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+          </ul>
+        </div>
+        <button type="button" class="btn btn-success">Удалить</button>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
