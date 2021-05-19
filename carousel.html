@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap page</title>
+  <link href="./styles.css" rel="stylesheet">
+  <link href="./main.css" rel="stylesheet">
+  <link href="./aside.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <aside>
+    <div class="components">Компоненты</div>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="accordion.html">Аккордеон</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="alerts.html">Уведомления</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="badge.html">Значки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="breadcrumb.html">Хлебные крошки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="buttons.html">Кнопки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="button-group.html">Группа кнопок</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cards.html">Карточки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="carousel.html">Карусель</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="close-button.html">Кнопка закрытия</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="collapse.html">Сворачиваемый контент</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="dropdowns.html">Выпадающие элементы</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="list-group.html">Группа списков</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="modal.html">Модальное окно</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="navs-and-tabs.html">Навигация и вкладки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="navbar.html">Навигационная панель</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pagination.html">Нумерация страниц</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="popovers.html">Информеры</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="progress.html">Прогрессбар</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="scrollspy.html">Отслеживание прокрутки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="spinners.html">Спиннеры</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href=toasts.html">Всплывающие сообщения</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tooltips.html">Подсказки</a>
+      </li>
+    </ul>
+  </aside>
+
+  <main>
+    <h3>Карусель</h3>
+    <section>
+      <h5>Стандартная карусель</h5>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/1.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/1.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/1.JPG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+
+
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/1.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/1.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/1.JPG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/1.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/1.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/1.JPG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <h5>Карусель с надписями</h5>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/1.JPG" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Метка первого слайда</h5>
+              <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/1.JPG" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Метка первого слайда</h5>
+              <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/1.JPG" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Метка первого слайда</h5>
+              <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <h5>Темный вариант карусели</h5>
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/1.JPG" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Метка первого слайда</h5>
+              <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/1.JPG" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Метка второго слайда</h5>
+              <p>Некоторый репрезентативный заполнитель для второго слайда.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/1.JPG" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Метка третьего слайда</h5>
+              <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <h5>Карусель с плавным переходом</h5>
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+       
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/1.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/1.JPG"" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/1.JPG"" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

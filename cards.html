@@ -74,7 +74,7 @@
         <a class="nav-link" href="progress.html">Прогрессбар</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="scrollsp.html">Отслеживание прокрутки</a>
+        <a class="nav-link" href="scrollspy.html">Отслеживание прокрутки</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="spinners.html">Спиннеры</a>
@@ -92,13 +92,135 @@
     <h3>Карточки</h3>
 
     <section>
-      <h5>Пример</h5>
+      <h5>Стандартные карточки</h5>
       <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Заголовок карточки</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Подзаголовок карточки</h6>
+          <p class="card-text">Текст</p>
+          <a href="#" class="card-link">Ссылка</a>
+          <a href="#" class="card-link">Ссылка</a>
+        </div>
+      </div>
+
+      <div class="card text-white bg-success" style="width: 18rem;">
         <img src="img/1.JPG" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Название карточки</h5>
+          <h5 class="card-title">Заголовок карточки</h5>
           <p class="card-text">Текст</p>
           <a href="#" class="btn btn-primary">Перейти</a>
+        </div>
+      </div>
+
+      <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+        <div class="card-header">Шапка</div>
+        <div class="card-body">
+          <h5 class="card-title">Заголовок карточки</h5>
+          <p class="card-text">Несколько быстрых примеров текста для построения на основе Заголовок карточки и составления основной части содержимого карточки.</p>
+        </div>
+      </div>
+
+    
+        <div class="card border-warning mb-3" style="max-width: 18rem;">
+          <div class="card-header">Шапка</div>
+          <div class="card-body">
+            <h5 class="card-title">Заголовок карточки</h5>
+            <p class="card-text">Несколько быстрых примеров текста для построения на основе Заголовок карточки и составления основной части содержимого карточки.</p>
+          </div>
+        </div>
+    </section>
+
+    <section>
+      <h5>Карточка с заголовком и подвалом</h5>
+      <div class="card">
+        <h5 class="card-header">Шапка</h5>
+        <div class="card-body">
+          <h5 class="card-title">Заголовок карточки</h5>
+          <p class="card-text">Текст</p>
+          <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+        </div>
+      </div>
+
+
+    <div class="card w-75">
+      <div class="card text-center">
+        <h5 class="card-header">Шапка</h5>
+        <div class="card-body">
+          <h5 class="card-title">Заголовок карточки</h5>
+          <p class="card-text">Текст</p>
+          <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+        </div>
+        <div class="card-footer text-muted">
+          2 дня спустя
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section>
+      <h5> Карточки и навигация</h5>
+      <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="true" href="#">Активная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ссылка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Неактивная</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Заголовок карточки</h5>
+          <p class="card-text">Текст</p>
+          <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h5>Карточка с надожением текста на картинку</h5>
+      <div class="card bg-dark text-white" style="width: 22rem;">
+        <img src="img/1.JPG" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Заголовок карточки</h5>
+          <p class="card-text">Текст</p>
+          <p class="card-text">Последнее обновление 3 мин. назад</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h5>Группа карточек</h5>
+      <div class="card-group">
+        <div class="card">
+          <img src="img/1.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Заголовок карточки</h5>
+            <p class="card-text">Текст</p>
+            <p class="card-text"><small class="text-muted">Последнее обновление 3 мин. назад</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/1.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Заголовок карточки</h5>
+            <p class="card-text">Текст</p>
+            <p class="card-text"><small class="text-muted">Последнее обновление 3 мин. назад</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="img/1.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Заголовок карточки</h5>
+            <p class="card-text">Текст</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Последнее обновление 3 мин. назад</small>
+          </div>
         </div>
       </div>
     </section>

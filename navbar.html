@@ -89,9 +89,70 @@
   </aside>
 
   <main>
-    <h3>Аккордион</h3>
+    <h3>Навигационная панель</h3>
     <section>
-      <h5></h5>
+      <h5>Стандартная навигационная панель</h5>
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Главная</a>
+              <a class="nav-link" href="#">Вход</a>
+              <a class="nav-link" href="#">Контакты</a>
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Блог</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section>
+        <h5>Навигационная панель с формой</h5>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                <a class="nav-link" href="#">Вход</a>
+                <a class="nav-link" href="#">Контакты</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Блог</a>
+              </div>
+            </div>
+          </div>
+          <form class="container-fluid">
+            <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Искать</button>
+        </form>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;"">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                <a class="nav-link" href="#">Вход</a>
+                <a class="nav-link" href="#">Контакты</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Блог</a>
+              </div>
+            </div>
+          </div>
+          <form class="container-fluid">
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon1">@</span>
+              <input type="text" class="form-control" placeholder="Ваше имя" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+          </form>
+        </nav>
     </section>
   </main>
 </body>
