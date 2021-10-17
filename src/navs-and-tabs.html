@@ -44,7 +44,7 @@
         <a class="nav-link" href="carousel.html">Карусель</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="close-button.html">Кнопка закрытия</a>
+        <a class="nav-link" href="close-button.html">Кнопка закрытия</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="collapse.html">Сворачиваемый контент</a>
@@ -59,16 +59,13 @@
         <a class="nav-link" href="modal.html">Модальное окно</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="navs-and-tabs.html">Навигация и вкладки</a>
+        <a class="nav-link active" href="navs-and-tabs.html">Навигация и вкладки</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="navbar.html">Навигационная панель</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="pagination.html">Нумерация страниц</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="popovers.html">Информеры</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="progress.html">Прогрессбар</a>
@@ -89,15 +86,61 @@
   </aside>
 
   <main>
-    <h3>Кнопка закрытия</h3>
+    <h3>Навигация и вкладки</h3>
+
     <section>
-      <h5>Стандартная активная кнопка</h5>
-      <button type="button" class="btn-close" aria-label="Close"></button>
+      <h5>Стандартная навигация с активными и неактивными ссылками</h5>
+      <nav class="nav">
+        <a class="nav-link" href="#">Ссылка</a>
+        <a class="nav-link" href="#">Ссылка</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Неактивная ссылка</a>
+      </nav>
     </section>
 
     <section>
-      <h5>Стандартаная неактивная кнопка</h5>
-      <button type="button" class="btn-close" disabled aria-label="Close"></button>
+      <h5>Вертикальная навигация с активными и неактивными ссылками</h5>
+      <nav class="nav flex-column">
+        <a class="nav-link" href="#">Ссылка</a>
+        <a class="nav-link" href="#">Ссылка</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Неактивная ссылка</a>
+      </nav>
+    </section>
+
+    <section>
+      <h5>Навигация Tabs</h5>
+      <nav class="nav nav-tabs">
+        <a class="nav-link" href="#">Ссылка</a>
+        <a class="nav-link" href="#">Ссылка</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Неактивная ссылка</a>
+      </nav>
+    </section>
+
+    <section>
+      <h5>Навигация Pills</h5>
+      <nav class="nav nav-pills nav-fill">
+        <a class="nav-link active" aria-current="page" href="#">Ссылка</a>
+        <a class="nav-link" href="#">Ссылка</a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Неактивная ссылка</a>
+      </nav>
+    </section>
+
+    <section>
+      <h5>Навигация и вкладки с выпадающими элементами</h5>
+      <nav class="nav nav-pills nav-fill">
+        <a class="nav-link active" aria-current="page" href="#">Ссылка</a>
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+          aria-expanded="false">Выпадающий эелемент</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Неактивная ссылка</a>
+      </nav>
     </section>
   </main>
 

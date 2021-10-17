@@ -68,9 +68,6 @@
         <a class="nav-link" href="pagination.html">Нумерация страниц</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="popovers.html">Информеры</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="progress.html">Прогрессбар</a>
       </li>
       <li class="nav-item">
@@ -91,25 +88,20 @@
   <main>
     <h3>Аккордеон</h3>
     <section>
-      <h5>Стандартный аккордеон</h5>
+      <h5>Стандартные аккордеоны</h5>
 
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
               aria-expanded="true" aria-controls="collapseOne">
-              Элемент аккордеона #1
+              Первый элемент
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>Это тело аккордеона первого элемента.</strong> По умолчанию оно скрыто, пока плагин сворачивания
-              не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы
-              управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить
-              все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить,
-              что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает
-              переполнение.
+              <strong>Это тело аккордеона первого элемента.</strong>
             </div>
           </div>
         </div>
@@ -117,18 +109,13 @@
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Элемент аккордеона #2
+              Второй элемент
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>Это тело аккордеона второго элемента.</strong> По умолчанию он скрыт, пока плагин свертывания не
-              добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы
-              управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить
-              все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить,
-              что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает
-              переполнение.
+              <strong>Это тело аккордеона второго элемента.</strong>
             </div>
           </div>
         </div>
@@ -136,18 +123,59 @@
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Элемент аккордеона #3
+              Третий элемент
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию оно скрыто, пока плагин свертывания
-              не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы
-              управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете изменить
-              все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит отметить,
-              что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход ограничивает
-              переполнение.
+              <strong>Это тело аккордеона третьего элемента.</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Первый элемент
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Это тело аккордеона первого элемента, который всегда открыт.</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Второй элемент
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Это тело аккордеона второго элемента.</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Третий элемент
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Это тело аккордеона третьего элемента.</strong>
             </div>
           </div>
         </div>

@@ -65,33 +65,58 @@
         <a class="nav-link" href="navbar.html">Навигационная панель</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="pagination.html">Нумерация страниц</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="popovers.html">Информеры</a>
+        <a class="nav-link active" href="pagination.html">Нумерация страниц</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="progress.html">Прогрессбар</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="scrollspy.html">Отслеживание прокрутки</a>
+        <a class="nav-link" href="scrollspy.html">Отслеживание прокрутки</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="spinners.html">Спиннеры</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href=toasts.html">Всплывающие сообщения</a>
+        <a class="nav-link" href="toasts.html">Всплывающие сообщения</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="tooltips.html">Подсказки</a>
       </li>
     </ul>
   </aside>
-
   <main>
-    <h3>Отслеживание прокрутки</h3>
+    <h3>Нумерация страниц</h3>
     <section>
-      <h5>Стандартное отслеживание прокрутки в списке</h5>
+      <h5>Стандартная нумерация страниц c активными и неактивными ссылками</h5>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item active"><a class="page-link" href="#">Предыдущая</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Следущая</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section>
+      <h5>Нумерация страниц с иконками</h5>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item disabled"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"> <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </section>
   </main>
 
