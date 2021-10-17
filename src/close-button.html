@@ -44,7 +44,7 @@
         <a class="nav-link" href="carousel.html">Карусель</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="close-button.html">Кнопка закрытия</a>
+        <a class="nav-link active" href="close-button.html">Кнопка закрытия</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="collapse.html">Сворачиваемый контент</a>
@@ -68,9 +68,6 @@
         <a class="nav-link" href="pagination.html">Нумерация страниц</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="popovers.html">Информеры</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="progress.html">Прогрессбар</a>
       </li>
       <li class="nav-item">
@@ -89,9 +86,21 @@
   </aside>
 
   <main>
-    <h3>Информеры</h3>
+    <h3>Кнопка закрытия</h3>
     <section>
-      <h5></h5>
+      <h5>Стандартная активная кнопка</h5>
+      <div class="alert alert-primary alert-dismissible fade show" role="alert">
+        <strong>Поздравляем!</strong> Вы оформили заказ. Скоро вам позвонят.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    </section>
+
+    <section>
+      <h5>Стандартаная неактивная кнопка</h5>
+      <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Ошибка!</strong> Вы не вошли в личный кабинет.
+        <button type="button" class="btn-close" disabled aria-label="Close"></button>
+      </div>
     </section>
   </main>
 

@@ -26,7 +26,7 @@
         <a class="nav-link" href="alerts.html">Уведомления</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="badge.html">Бейджи</a>
+        <a class="nav-link active" href="badge.html">Бейджи</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="breadcrumb.html">Хлебные крошки</a>
@@ -59,16 +59,13 @@
         <a class="nav-link" href="modal.html">Модальное окно</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="navs-and-tabs.html">Навигация и вкладки</a>
+        <a class="nav-link" href="navs-and-tabs.html">Навигация и вкладки</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="navbar.html">Навигационная панель</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="pagination.html">Нумерация страниц</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="popovers.html">Информеры</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="progress.html">Прогрессбар</a>
@@ -89,61 +86,25 @@
   </aside>
 
   <main>
-    <h3>Навигация и вкладки</h3>
-
+    <h3>Бейджи</h3>
     <section>
-      <h5>Стандартная навигация с активными и неактивными ссылками</h5>
-      <nav class="nav">
-        <a class="nav-link" href="#">Ссылка</a>
-        <a class="nav-link" href="#">Ссылка</a>
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Неактивная ссылка</a>
-      </nav>
+      <h5>Стандартные бейджи рядом с заголовком</h5>
+      <h4>Куртка<span class="badge bg-success">Добавлена</span></h4>
+      <h5>Куртка<span class="badge bg-danger">Ошибка</span></h5>
+      <h6>Куртка<span class="badge bg-primary">Новинка</span></h6>
     </section>
 
     <section>
-      <h5>Вертикальная навигация с активными и неактивными ссылками</h5>
-      <nav class="nav flex-column">
-        <a class="nav-link" href="#">Ссылка</a>
-        <a class="nav-link" href="#">Ссылка</a>
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Неактивная ссылка</a>
-      </nav>
+      <h5>Уведомление с бейджем</h5>
+      <button type="button" class="btn btn-primary">
+        Уведомления<span class="badge bg-secondary">4</span>
+      </button>
     </section>
 
     <section>
-      <h5>Навигация Tabs</h5>
-      <nav class="nav nav-tabs">
-        <a class="nav-link" href="#">Ссылка</a>
-        <a class="nav-link" href="#">Ссылка</a>
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Неактивная ссылка</a>
-      </nav>
-    </section>
-
-    <section>
-      <h5>Навигация Pills</h5>
-      <nav class="nav nav-pills nav-fill">
-        <a class="nav-link active" aria-current="page" href="#">Ссылка</a>
-        <a class="nav-link" href="#">Ссылка</a>
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Неактивная ссылка</a>
-      </nav>
-    </section>
-
-    <section>
-      <h5>Навигация и вкладки с выпадающими элементами</h5>
-      <nav class="nav nav-pills nav-fill">
-        <a class="nav-link active" aria-current="page" href="#">Ссылка</a>
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-          aria-expanded="false">Выпадающий эелемент</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-          <li>
-            <hr class="dropdown-divider">
-          </li>
-          <li><a class="dropdown-item" href="#">Separated link</a></li>
-        </ul>
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Неактивная ссылка</a>
-      </nav>
+      <h5>Скругленные бейджи </h5>
+      <h6>Футболка<span class="badge rounded-pill bg-primary">Новинка</span></h6>
+      <h6>Код из смс<span class="badge rounded-pill bg-success">Подтвержден</span></h6>
     </section>
   </main>
 

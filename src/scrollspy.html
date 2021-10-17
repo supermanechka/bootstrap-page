@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap page</title>
+  <link href="./styles.css" rel="stylesheet">
+  <link href="./main.css" rel="stylesheet">
+  <link href="./aside.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <aside>
+    <div class="components">Компоненты</div>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="accordion.html">Аккордеон</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="alerts.html">Уведомления</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="badge.html">Бейджи</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="breadcrumb.html">Хлебные крошки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="buttons.html">Кнопки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="button-group.html">Группа кнопок</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cards.html">Карточки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="carousel.html">Карусель</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="close-button.html">Кнопка закрытия</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="collapse.html">Сворачиваемый контент</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="dropdowns.html">Выпадающие элементы</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="list-group.html">Группа списков</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="modal.html">Модальное окно</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="navs-and-tabs.html">Навигация и вкладки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="navbar.html">Навигационная панель</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pagination.html">Нумерация страниц</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="progress.html">Прогрессбар</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="scrollspy.html">Отслеживание прокрутки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="spinners.html">Спиннеры</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href=toasts.html">Всплывающие сообщения</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="tooltips.html">Подсказки</a>
+      </li>
+    </ul>
+  </aside>
+
+  <main>
+    <h3>Отслеживание прокрутки</h3>
+    <section>
+      <h5>Стандартное отслеживание прокрутки в списке</h5>
+      <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+        <a class="navbar-brand" href="#">Панель навигации</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">Первый</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Второй</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Третий</a>
+          </li>
+      </nav>
+
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
+        tabindex="0">
+        <h6 id="scrollspyHeading1">Первый заголовок</h6>
+        <p>Одежда очень важна в нашей жизни. Это неотъемлемая часть нашего образа, в которой мы нуждаемся ежедневно.
+          Когда мы видим человека впервые, первое на что мы обращаем внимание – одежда. Человек, одетый аккуратно и
+          опрятно, произведет на нас большее впечатление, чем неряшливый. Поэтому так важно следить за своим внешним
+          видом. Однако, каждая девушка старается хоть немного следовать моде. Бесконечный просмотр журналов, зубрежка
+          известных брендов, правильное сочетание цветов - все это неизменная часть жизни каждой представительницы
+          прекрасного пола. Обычно на моду нужно много денег, особенно на дизайнерские вещи. Но даже девушки с
+          ограниченными финансовыми возможностями стараются покупать новейшие модели одежды.</p>
+        <h6 id="scrollspyHeading2">Второй заголовок</h6>
+        <p>Существует много разных стилей, мода не стоит на месте. Постоянно изобретается что-то новое и необычное.
+          Современные ткани и причудливые фасоны появляются каждый сезон. Кто-то наоборот предпочитает классику и
+          простоту линий. То как вы одеваетесь, расскажет о вас больше, чем вы думаете. Одежда – это вторая кожа, для
+          того, чтобы нравиться окружающим, нужно найти и носить то, что вам по душе. Необязательно покупать дорогую
+          одежду, чтобы выглядеть стильно. Главное уметь правильно сочетать вещи. Также нужно продумывать свой образ.
+          Короткая юбка будет неуместна в школе, а школьная форма на дне рождения у подруги, если только вы не решили
+          устроить костюмированную вечеринку. Для каждого мероприятия и местонахождения существует свой негласный
+          дресс-код, которого мы должны придерживаться, чтобы быть одетыми со вкусом.
+          Мода действительно играет большую роль в жизни людей. Она быстро меняется, но вновь возвращается в наш мир.
+          Например, в 70-е года было модно носить яркие леггинсы и расклешенные штаны. А вот в 90-е предпочтение
+          отдавалось открытой и практичной одежде. В 2008 в моду вошли джинсы на низкой посадке, а в 2016 к нам вновь
+          вернулись укороченные футболки и высокая посадка. Модой увлекается большинство девушек. К тому же так
+          интересно узнать, что стало трендом текущего года. Но моде совершенно не обязательно следовать и уж тем более
+          поклоняться. Ведь она приходит и уходит, а что делать с гардеробом, полных ненужных вещей? Правильно, только
+          выбрасывать. Тогда зачем нужно покупать то, что тебе даже не нравится? Ведь порой дизайнерские вещи слишком
+          неудобны для постоянного ношения. Не лучше ли отдать предпочтение более практичной одежде?
+        </p>
+        <h6 id="scrollspyHeading3">Третий заголовок</h6>
+        <p>Но одежда важна, только в первые несколько минут знакомства. Для того чтобы впечатлить окружающих не только
+          наружной оболочкой, но и внутренним содержимым необходимо постоянно самосовершенствоваться, развивать свои
+          способности, находить в себе новые таланты, читать книги и изучать языки. Одежда сделает свое дело и
+          продемонстрирует стройность фигуры и умение одеваться изысканно. Дальше - дело за вами.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

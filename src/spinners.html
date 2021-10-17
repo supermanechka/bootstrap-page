@@ -26,7 +26,7 @@
         <a class="nav-link" href="alerts.html">Уведомления</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="badge.html">Бейджи</a>
+        <a class="nav-link" href="badge.html">Бейджи</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="breadcrumb.html">Хлебные крошки</a>
@@ -68,16 +68,13 @@
         <a class="nav-link" href="pagination.html">Нумерация страниц</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="popovers.html">Информеры</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="progress.html">Прогрессбар</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="scrollspy.html">Отслеживание прокрутки</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="spinners.html">Спиннеры</a>
+        <a class="nav-link active" href="spinners.html">Спиннеры</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="toasts.html">Всплывающие сообщения</a>
@@ -89,25 +86,46 @@
   </aside>
 
   <main>
-    <h3>Бейджи</h3>
+    <h3>Спиннеры</h3>
     <section>
-      <h5>Стандартные бейджи рядом с заголовком</h5>
-      <h4>Пример заголовка <span class="badge bg-success">Новинка</span></h4>
-      <h5>Пример заголовка <span class="badge bg-danger">Новинка</span></h5>
-      <h6>Пример заголовка <span class="badge bg-primary">Новинка</span></h6>
+      <h5>Спиннер с границей</h5>
+      <div class="d-flex">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-border text-danger" role="status">
+          <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-border text-dark" role="status">
+          <span class="visually-hidden">Загрузка...</span>
+        </div>
+      </div>
+
+      <div class="d-flex align-items-center">
+        <strong>Загрузка...</strong>
+        <div class="spinner-border m-5" role="status" aria-hidden="true"></div>
+      </div>
     </section>
 
     <section>
-      <h5>Уведомление с бейджем</h5>
-      <button type="button" class="btn btn-primary">
-        Уведомления<span class="badge bg-secondary">4</span>
-      </button>
-    </section>
-
-    <section>
-      <h5>Скругленные бейджи </h5>
-      <h6>Футболка<span class="badge rounded-pill bg-primary">Новинка</span></h6>
-      <h6>Код из смс<span class="badge rounded-pill bg-success">Подтвержден</span></h6>
+      <h5>Увеличивающийся спиннер</h5>
+      <div class="d-flex justify-content">
+        <div class="spinner-grow" role="status">
+          <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+          <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+          <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+          <span class="visually-hidden">Загрузка...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+          <span class="visually-hidden">Загрузка...</span>
+        </div>
+      </div>
     </section>
   </main>
 

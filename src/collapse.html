@@ -47,7 +47,7 @@
         <a class="nav-link" href="close-button.html">Кнопка закрытия</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="collapse.html">Сворачиваемый контент</a>
+        <a class="nav-link active" href="collapse.html">Сворачиваемый контент</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="dropdowns.html">Выпадающие элементы</a>
@@ -68,9 +68,6 @@
         <a class="nav-link" href="pagination.html">Нумерация страниц</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="popovers.html">Информеры</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="progress.html">Прогрессбар</a>
       </li>
       <li class="nav-item">
@@ -83,18 +80,52 @@
         <a class="nav-link" href="toasts.html">Всплывающие сообщения</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="tooltips.html">Подсказки</a>
+        <a class="nav-link" href="tooltips.html">Подсказки</a>
       </li>
     </ul>
   </aside>
   <main>
-    <h3>Подсказки</h3>
+    <h3>Сворачиваемый контент</h3>
     <section>
-      <h5>Стандартная подсказка</h5>
-      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
-        title="Подсказка вверху">
-        Подсказка вверху
-      </button>
+      <h5>Стандартный сворачиваемый контент</h5>
+      <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
+          Стандартная ссылка
+        </a>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body">
+          Текст</div>
+      </div>
+    </section>
+
+    <section>
+      <h5>Взаимодействие со множественными объектами</h5>
+      <p>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+          aria-expanded="false" aria-controls="multiCollapseExample1">Переключить первый элемент</a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"
+          aria-expanded="false" aria-controls="multiCollapseExample2">Переключить второй элемент</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+          aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Переключить оба
+          элемента</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              Текст
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              Текст
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 

@@ -23,7 +23,7 @@
         <a class="nav-link" href="accordion.html">Аккордеон</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="alerts.html">Уведомления</a>
+        <a class="nav-link active" href="alerts.html">Уведомления</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="badge.html">Бейджи</a>
@@ -32,7 +32,7 @@
         <a class="nav-link" href="breadcrumb.html">Хлебные крошки</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="buttons.html">Кнопки</a>
+        <a class="nav-link" href="buttons.html">Кнопки</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="button-group.html">Группа кнопок</a>
@@ -68,9 +68,6 @@
         <a class="nav-link" href="pagination.html">Нумерация страниц</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="popovers.html">Информеры</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="progress.html">Прогрессбар</a>
       </li>
       <li class="nav-item">
@@ -89,38 +86,50 @@
   </aside>
 
   <main>
-    <h3>Кнопки</h3>
+    <h3>Уведомления</h3>
     <section>
-      <h5>Стандартные кнопки</h5>
-      <a class="btn btn-light" href="#" role="button">Ссылка</a>
-      <button class="btn btn-primary" type="submit">Нажми</button>
-      <input class="btn btn-success" type="submit" value="Подтвердить">
-      <input class="btn btn-danger" type="reset" value="Удалить">
-      <button type="button" class="btn btn-outline-primary">Новинка</button>
-    </section>
-
-    <section>
-      <h5> Размеры кнопок</h5>
-      <button type="button" class="btn btn-primary btn-lg">Большая кнопка</button>
-      <button class="btn btn-success" type="submit">Средняя кнопка</button>
-      <button type="button" class="btn btn-secondary btn-sm">Маленькая кнопка</button>
-    </section>
-
-    <section>
-      <h5>Активные и неактивные кнопки и ссылки</h5>
-      <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off"
-        aria-pressed="true">Активная кнопка</button>
-      <button type="button" class="btn btn-primary" disabled data-bs-toggle="button" autocomplete="off">Неактивная
-        сслыка</button>
-    </section>
-
-    <section>
-      <h5>Блочные кнопки</h5>
-      <div class="d-grid gap-1">
-        <button class="btn btn-primary" type="button">Сохранить</button>
+      <h5>Стандартные уведомления</h5>
+      <div class="alert alert-primary" role="alert">
+        Это основное уведомление на синем фоне — check it out!
       </div>
-      <div class="d-grid gap-1 col-6 mx-auto m-3">
-        <button class="btn btn-danger" type="button">Удалить</button>
+      <div class="alert alert-secondary" role="alert">
+        Это дополнительное уведомление на черном фоне — check it out!
+      </div>
+      <div class="alert alert-success" role="alert">
+        Это уведомление об удачной операции — check it out!
+      </div>
+      <div class="alert alert-danger" role="alert">
+        Это уведомление об ошибки — check it out!
+      </div>
+      <div class="alert alert-warning" role="alert">
+        Это уведомление-предупреждение — check it out!
+      </div>
+      <div class="alert alert-info" role="alert">
+        Это инфо-уведомление — check it out!
+      </div>
+      <div class="alert alert-light" role="alert">
+        Это уведомление на светлом фоне — check it out!
+      </div>
+      <div class="alert alert-dark" role="alert">
+        Это темное уведомление — check it out!
+      </div>
+    </section>
+
+    <section>
+      <h5>Уведомелние с дополнительным содержимым</h5>
+      <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Ура, вы прошли тест!</h4>
+        <p>Здесь можно расположить большое сообщение с информацией.</p>
+        <hr>
+        <p class="mb-0">Отличная работа!</p>
+      </div>
+    </section>
+
+    <section>
+      <h5>Уведомление с возможностью закрытия</h5>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Вы выиграли!</strong> Поздравляю, теперь вы победитель.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
     </section>
   </main>

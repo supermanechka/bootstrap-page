@@ -47,7 +47,7 @@
         <a class="nav-link" href="close-button.html">Кнопка закрытия</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="collapse.html">Сворачиваемый контент</a>
+        <a class="nav-link" href="collapse.html">Сворачиваемый контент</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="dropdowns.html">Выпадающие элементы</a>
@@ -68,10 +68,7 @@
         <a class="nav-link" href="pagination.html">Нумерация страниц</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="popovers.html">Информеры</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="progress.html">Прогрессбар</a>
+        <a class="nav-link active" href="progress.html">Прогрессбар</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="scrollspy.html">Отслеживание прокрутки</a>
@@ -87,51 +84,58 @@
       </li>
     </ul>
   </aside>
+
   <main>
-    <h3>Сворачиваемый контент</h3>
+    <h3>Прогрессбар</h3>
+
     <section>
-      <h5>Стандартный сворачиваемый контент</h5>
-      <p>
-        <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
-          aria-controls="collapseExample">
-          Ссылка
-        </a>
-      <div class="collapse" id="collapseExample">
-        <div class="card card-body">
-          Некоторый заполнитель для компонента сворачивания. Эта панель по умолчанию скрыта, но открывается, когда
-          пользователь активирует соответствующий триггер.</div>
+      <h5>Стандартный прогрессбар</h5>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+          aria-valuemax="100">25%</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+          aria-valuemax="100">50%</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+          aria-valuemax="100">75%</div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+          aria-valuemax="100">100%</div>
+      </div>
+
+    </section>
+    <section>
+      <h5>Фон прогрессбара</h5>
+      <div class="progress">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+          aria-valuemax="100"></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0"
+          aria-valuemax="100"></div>
+        <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0"
+          aria-valuemax="100"></div>
+        <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0"
+          aria-valuemax="100"></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10"
+          aria-valuemin="0" aria-valuemax="100"></div>
       </div>
     </section>
 
     <section>
-      <h5>Взаимодействие со множественными объектами</h5>
-      <p>
-        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
-          aria-expanded="false" aria-controls="multiCollapseExample1">Переключить первый элемент</a>
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"
-          aria-expanded="false" aria-controls="multiCollapseExample2">Переключить второй элемент</button>
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
-          aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Переключить оба
-          элемента</button>
-      </p>
-      <div class="row">
-        <div class="col">
-          <div class="collapse multi-collapse" id="multiCollapseExample1">
-            <div class="card card-body">
-              Некоторый заполнитель для первого компонента сворачивания в этом примере множественного сворачивания. Эта
-              панель по умолчанию скрыта, но открывается, когда пользователь активирует соответствующий триггер.
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="collapse multi-collapse" id="multiCollapseExample2">
-            <div class="card card-body">
-              Некоторое содержимое заполнителя для второго компонента сворачивания в этом примере множественного
-              сворачивания. Эта панель по умолчанию скрыта, но открывается, когда пользователь активирует
-              соответствующий триггер.
-            </div>
-          </div>
-        </div>
+      <h5>Анимированный прогрессбар</h5>
+      <div class="progress">
+        <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar"
+          aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
       </div>
     </section>
   </main>
